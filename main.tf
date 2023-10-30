@@ -29,7 +29,7 @@ resource "aws_kms_key_policy" "tokyo_kms_key_policy" {
         Action = "kms:*"
         Effect = "Allow"
         Principal = {
-          AWS = "arn:aws:iam::297200899628:root"
+          AWS = "arn:aws:iam::297200899628:user/demo-user"
         }
 
         Resource = "*"

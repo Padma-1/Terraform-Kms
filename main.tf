@@ -13,7 +13,7 @@ resource "aws_kms_key" "tokyo_kms_key" {
   description             = "KMS key for Tokyo"
   deletion_window_in_days = 10
   key_usage               = "ENCRYPT_DECRYPT"
-  enable_key_rotation     = true
+  #enable_key_rotation     = true
   tags = {
     Name = "tokyo_kms_key"    
   }
